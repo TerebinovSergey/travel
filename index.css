@@ -1,0 +1,282 @@
+@import url(node_modules/normalize.css/normalize.css);
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+    font-family: "Red Hat Text", "Arial", sans-serif;    
+    margin: auto;    
+    max-width: 1440px;
+    /*font-family: 'Aleo', serif;
+    padding: 0;*/
+}
+
+.preview { 
+    display: flex; 
+    flex-direction: column;      
+    margin: 0 auto;
+    background-image: url(source/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.png);
+    background-repeat: no-repeat;   
+    background-size: 100% 100%; 
+    background-position: center center;        
+    min-height: 765px;
+    
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2785C70;      
+    min-height: 90px;     
+}
+
+.nav {
+    width: 36.6%;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.nav__list__li {
+    display: inline;      
+    font-size: 16px; 
+    height: 21px; 
+    margin: 0 7px;   
+}
+
+.login {
+    color: #ffffff;  
+    border: none;
+    background-color: #0D606F;  
+    border-radius: 10px;
+    font-size: 16px;
+    height: 41px;
+    width: 7.15%;
+    min-width: 50px;
+}
+
+.logo {
+    width: 15%;
+    height: 31px; 
+    min-width: 205.5px;      
+}
+
+.logo span {
+    font-family: 'Magra', sans-serif;
+    font-size: 32px;
+    font-weight: bold;     
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+/* ---- section PLANNING ----*/
+
+.planning {        
+    margin: 32px 0 0 8.33%;
+    width: 61.94%;
+    font-family: 'Aleo', serif;
+}
+
+.planning h1{      
+    font-size: 80px; 
+    font-weight: bold; 
+    margin: 0;    
+}
+
+.planning div{    
+    margin: 46px 0;    
+}
+
+.planning__span{      
+    font-size: 20px; 
+    font-weight: bold;             
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 95px;  
+    min-width: 305px;   
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.search span {
+    font-family: 'Aleo', serif;
+    font-style: italic;
+    font-size: 24px; 
+    color: #F2785C; 
+    margin-left: 4.6%;     
+}
+
+.search button {    
+    margin: 2.02%;
+    padding: 1.12% 3.59%; 
+    width: 25.56%;
+    min-width: 130px;
+    height: 59px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0D606F;
+    color: #ffffff;
+    font-size: 24px;   
+}
+
+/*-- section STEPS --*/
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 81.73%;
+    margin: 97px 9.1%;
+}
+
+.steps h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #F2785C;
+    text-align: center;
+}
+
+.steps__content {    
+    display: flex;
+    width: 100%
+}
+
+.step {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.step-right {
+    margin-left: 13.59%;       
+}
+
+.step-center {
+    margin-left: 19.63%;    
+}
+
+.icon-fon { 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 40.61%;
+    max-width: 100px;
+    min-width: 60px;
+    height: 100px;
+    background-color: #F2785C;
+    border-radius: 10px;
+
+}
+
+.step-img {    
+    background-repeat: no-repeat;
+    background-position: center center;        
+}
+
+.step-img-1 {
+    background-image: url(source/img/step1.svg);    
+    width: 50px;
+    height: 45px;    
+}
+
+.step-img-2 {
+    background-image: url(source/img/step2.svg);    
+    width: 52px;
+    height: 52px;    
+}
+
+.step-img-3 {
+    background-image: url(source/img/step3.svg);    
+    width: 60px;
+    height: 45px;    
+}
+
+.step-discription {
+    margin-top: 30px;
+    padding: 0 0;
+    font-family: 'Aleo', serif;  
+    font-weight: 400;
+    font-size: 20px; 
+    color: #0D606F;  
+    text-align: center;      
+}
+
+@media screen and (max-width: 507px) {     
+    
+    .step-right {
+        margin-left: 0px;    
+    }
+
+    .step-center {
+        margin-left: 0px;    
+    }
+
+    .steps__content {
+        flex-wrap: wrap;
+        justify-content: center;        
+    }
+    
+    .step {
+        margin-bottom: 20px;
+    }
+
+    .step:last-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+/*-- section STORIES --*/
+
+.stories {
+    background-image: url(source/img/Rectangle33.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 1331px;
+}
+
+.stories-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    min-height: 1270px;    
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 61px;
+}
+
+.footer span {
+    
+}
